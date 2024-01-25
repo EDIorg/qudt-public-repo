@@ -31583,29 +31583,7 @@ unit:GM-PER-HectoGM
   rdfs:label "Gram Per Hectogram"@en ;
 # christine
 .
-unit:CentiM3-PER-CentiM3
-  a qudt:Unit ;
-  dcterms:description "A ratio of volumes, where one cubic centimeter equals exactly 0.000001 cubic meters." ;
-  qudt:plainTextDescription "A ratio of volumes, where one cubic centimeter equals exactly 0.000001 cubic meters." ;
-  qudt:applicableSystem sou:CGS ;
-  qudt:applicableSystem sou:CGS-EMU ;
-  qudt:applicableSystem sou:CGS-GAUSS ;
-  qudt:applicableSystem sou:SI ;
-  qudt:conversionMultiplier 1.0 ;
-  qudt:expression "\\(cm^{3}-cm^{-3}\\)"^^qudt:LatexString ;
-  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D1 ;
-  qudt:qkdvNumerator qkdv:A0E0L3I0M0H0T0D0 ;
-  qudt:qkdvDenominator qkdv:A0E0L3I0M0H0T0D0 ;
-  qudt:hasQuantityKind quantitykind:unknown;
-  qudt:symbol "cm3/cm3" ;
-  rdf:type qudt:Unit ;
-  qudt:ucumCode "cm3.cm-3"^^qudt:UCUMcs ;
-  qudt:ucumCode "cm3/cm3"^^qudt:UCUMcs ;
-  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
-  rdfs:label "Cubic Centimeter Per Cubic Centimeter"@en ;
-# christine
-# to do: need to know more about the measurement to set quantityKind
-.
+
 unit:MicroGM-PER-L
   a qudt:Unit ;
   dcterms:description "0.000000001-fold of the SI base unit kilogram divided by the unit litre, which is 0.001 cubic meter" ;
@@ -31956,25 +31934,7 @@ unit:KiloGM-PER-M2-DAY
   rdfs:label "kilogram per square meter per day"@en-us ;
   rdfs:label "kilogram per square metre per day"@en ;
 .
-unit:MicroGM-PER-GM-HR 
-  a qudt:DerivedUnit ;
-  a qudt:Unit ;
-  dcterms:description "mass ratio per time as 0.000000001-fold of the SI base unit kilogram divided by 0.001-fold the SI base unit kilogram per hour (3600 seconds) " ;
-  qudt:applicableSystem sou:CGS ;
-  qudt:applicableSystem sou:CGS-EMU ;
-  qudt:applicableSystem sou:CGS-GAUSS ;
-  qudt:applicableSystem sou:SI ;
-  qudt:conversionMultiplier 277777777.77777800000000000000 ;
-  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D1 ;
-  qudt:hasQuantityKind quantitykind:Unknown ; 
-  qudt:plainTextDescription "mass ratio per time as 0.000000001-fold of the SI base unit kilogram divided by 0.001-fold the SI base unit kilogram per hour (3600 seconds)" ;
-  qudt:symbol "ug/g/hr" ;
-  qudt:ucumCode "ug.g-1.hr-1"^^qudt:UCUMcs ;
-  qudt:ucumCode "ug/g/hr"^^qudt:UCUMcs ;
-  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
-  rdfs:label "microgram per gram per hour"@en ;
-  #I have not seen this quantity kind used before (MassRatioPerTime), do we need to define it?
-.
+
   
 unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof quantitykind:AmountOfSubstancePerLengthPerTime_Squared 
   a qudt:DerivedUnit ;
@@ -32062,11 +32022,18 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   qudt:conversionMultiplier 1 ;
   qudt:hasDimensionVector qkdv:A1E0L0I0M-1H0T0D0 ;
   qudt:hasQuantityKind quantitykind:AmountOfSubstancePerUnitMass ;
+  qudt:hasQuantityKind quantitykind:Concentration ;
   qudt:plainTextDescription "Count of an entity or phenomenon's occurrence divided by SI base unit kilogram"@en ;
   qudt:symbol "/kg" ;
   qudt:ucumCode "{#}.kg-1"^^qudt:UCUMcs ;
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
   rdfs:label "Number per kilogram"@en ;
+  	# note added by mobb ;
+	# this one should break, because qk:concentration doesn't include that deminsion vector
+	# right now, qk Concentration has only one dimension vector (dimension:A1E0L-3I0M0H0T0D0), although the description says that it can be mass, molar, number, and volume)
+	# TO DO: confirm that this is a concentration (something similar should be typed that way - e.g., in oceaongraphy they use kg in the denominator) 
+	# also see quantitykind:ParticleNumberDensity (although that has only volumes in the denom)
+
 .
   unit:MicroGM-PER-GM-HR 
   a qudt:Unit ;
@@ -32083,6 +32050,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
   rdfs:label "Micrograms per gram per hour"@en ;
   #this quantity kind (DimensionlessRatioPerTime) not yet defined 
+  # also suggested, quantityKind might be MassRatioPerTime
 .
   unit:GM-PER-M2-HR 
   a qudt:Unit ;
@@ -32199,26 +32167,5 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     # aded by mob ;
     # TO DO: quantityKind is currently a placeholder. suspect it is an areal, e.g., for a biomass measurement. ;
   .
-  unit:NUM-PER-KiloGM
-    a qudt:Unit ;
-    dcterms:description "count of objects per SI unit of sample mass."@en ;
-    qudt:applicableSystem sou:CGS ;
-    qudt:applicableSystem sou:CGS-EMU ;
-    qudt:applicableSystem sou:CGS-GAUSS ;
-    qudt:applicableSystem sou:SI ;
-    qudt:conversionMultiplier 1.0 ;
-    qudt:hasDimensionVector qkdv:A0E0L0I0M-1H0T0D0 ;
-    qudt:hasQuantityKind quantitykind:Concentration ;
-	qudt:plainTextDescription  "count of objects per SI unit of sample mass.";
-    qudt:symbol "/kg" ;
-    qudt:ucumCode ".kg-1"^^qudt:UCUMcs ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
-    rdfs:label "Number per kilogram"@en ;
-	# added by mobb ;
-	# this one should break, because qk:concentration doesn't include that deminsion vector
-	# right now, qk Concentration has only one dimension vector (dimension:A1E0L-3I0M0H0T0D0), although the description says that it can be mass, molar, number, and volume)
-	# TO DO: confirm that this is a concentration (something similar should be typed that way - e.g., in oceaongraphy they use kg in the denominator) 
-	# also see quantitykind:ParticleNumberDensity (although that has only volumes in the denom)
-
-  .
+ 
     
