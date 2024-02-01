@@ -31923,7 +31923,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   qudt:conversionMultiplier 0.000001 ;
   qudt:hasDimensionVector qkdv:A1E0L-2I0M0H0T-2D0 ;
   qudt:hasQuantityKind quantitykind:Unknown ;
-  qudt:plainTextDescription "One part per 10**6 (million) of the SI unit of quantity of matter (the mole) per SI unit length per SI unit of time squared."@en ;
+  qudt:plainTextDescription "One part per 10**6 (million) of the SI unit of quantity of matter (the mole) per SI unit length per SI unit of time squared." ;
   qudt:symbol "umol/m/s²" ;
   qudt:ucumCode "umol.m-1.s-2"^^qudt:UCUMcs ;
   qudt:ucumCode "umol/m/s^2"^^qudt:UCUMcs ;
@@ -31971,7 +31971,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   qudt:conversionMultiplier 0.000001 ;
   qudt:hasDimensionVector qkdv:A1E0L-2I0M0H0T-1D0 ;
   qudt:hasQuantityKind quantitykind:Unknown ; 
-  qudt:plainTextDescription "One part per 10**6 (million) of the SI unit of quantity of matter (the mole) per SI unit area per SI unit of time squared."@en ;
+  qudt:plainTextDescription "One part per 10**6 (million) of the SI unit of quantity of matter (the mole) per SI unit area per SI unit of time squared." ;
   qudt:symbol "umol/m²/s²" ;
   qudt:ucumCode "umol.m-2.s-2"^^qudt:UCUMcs ;
   qudt:ucumCode "umol/m^2/s^2"^^qudt:UCUMcs ;
@@ -31989,7 +31989,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   qudt:hasDimensionVector qkdv:A1E0L0I0M-1H0T0D0 ;
   qudt:hasQuantityKind quantitykind:AmountOfSubstancePerUnitMass ;
   qudt:hasQuantityKind quantitykind:Concentration ;
-  qudt:plainTextDescription "Count of an entity or phenomenon's occurrence divided by SI base unit kilogram"@en ;
+  qudt:plainTextDescription "Count of an entity or phenomenon's occurrence divided by SI base unit kilogram" ;
   qudt:symbol "/kg" ;
   qudt:ucumCode "{#}.kg-1"^^qudt:UCUMcs ;
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
@@ -32010,7 +32010,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D1 ;
   qudt:hasQuantityKind quantitykind:Unknown ; 
   qudt:hasQuantityKind quantitykind:Rate ; 
-  qudt:plainTextDescription "0.0000000001-fold of the SI base unit kilogram divided by 0.0001-fold of the SI base unit kilogram over a period of 1 hour "@en ;
+  qudt:plainTextDescription "0.0000000001-fold of the SI base unit kilogram divided by 0.0001-fold of the SI base unit kilogram over a period of 1 hour " ;
   qudt:symbol "ugram/g/hr)" ;
   qudt:ucumCode "ug.g-1.hr-1"^^qudt:UCUMcs ;
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
@@ -32026,7 +32026,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   qudt:conversionMultiplier 0.384615384615385;
   qudt:hasDimensionVector qkdv:A0E0L-2I0M1H0T-1D0 ;
   qudt:hasQuantityKind quantitykind:MassPerAreaTime ;
-  qudt:plainTextDescription "0.0001-fold of the SI base unit kilogram divided by the SI base unit meter with the exponent 2 over a period of 1 hour "@en ;
+  qudt:plainTextDescription "0.0001-fold of the SI base unit kilogram divided by the SI base unit meter with the exponent 2 over a period of 1 hour " ;
   qudt:symbol "gram/m²/hr)" ;
   qudt:ucumCode "g.m-2.hr-1"^^qudt:UCUMcs ;
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
