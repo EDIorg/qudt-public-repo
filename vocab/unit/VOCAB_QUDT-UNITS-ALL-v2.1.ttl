@@ -31584,28 +31584,7 @@ unit:GM-PER-HectoGM
 # christine
 .
 
-unit:MicroGM-PER-L
-  a qudt:Unit ;
-  dcterms:description "0.000000001-fold of the SI base unit kilogram divided by the unit litre, which is 0.001 cubic meter" ;
-  qudt:plainTextDescription "0.000000001-fold of the SI base unit kilogram divided by the unit litre, which is 0.001 cubic meter" ;
-  qudt:applicableSystem sou:CGS ;
-  qudt:applicableSystem sou:CGS-EMU ;
-  qudt:applicableSystem sou:CGS-GAUSS ;
-  qudt:applicableSystem sou:SI ;
-  qudt:conversionMultiplier 1E-6 ;
-  qudt:hasDimensionVector qkdv:A0E0L-3I0M1H0T0D0 ;
-  qudt:qkdvNumerator qkdv:A0E0L0I0M1H0T0D0 ;
-  qudt:qkdvDenominator qkdv:A0E0L3I0M0H0T0D0 ;
-  qudt:hasQuantityKind quantitykind:Concentration;
-  qudt:symbol "ug3/L" ;
-  rdf:type qudt:Unit ;
-  qudt:ucumCode "ug3.L-1"^^qudt:UCUMcs ;
-  qudt:ucumCode "ug3/L"^^qudt:UCUMcs ;
-  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
-  rdfs:label "Microgram Per Litre"@en ;
-  rdfs:label "Microgram Per Liter"@en-us ;
-# christine
-.
+
 unit:MicroS-PER-CM
   a qudt:Unit ;
   dcterms:description "Unit of electrical conductivity equal to 0.000001-fold of the SI derived unit siemens divided by 0,01-fold of the SI base unit meter" ;
@@ -32001,20 +31980,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   rdfs:label "micromole per square meter per square second"@en-us ;
   #this quantity kind AmountOfSubstancePerAreaPerTime_squared  is also not defined
 .
-  unit:KiloGM-PER-YR 
-  a qudt:Unit ;
-  a qudt:DerivedUnit ;
-  dcterms:description "SI base unit kilogram divided by a period of an average calendar year (365.25 days)"@en ;
-  qudt:applicableSystem sou:SI ;
-  qudt:conversionMultiplier 0.00000003168808781403 ;
-  qudt:hasDimensionVector qkdv:A0E0L0I0M1H0T-1D0 ;
-  qudt:hasQuantityKind quantitykind:MassPerTime ;
-  qudt:plainTextDescription "SI base unit kilogram divided by a period of an average calendar year (365.25 days)"@en ;
-  qudt:symbol "kg/yr" ;
-  qudt:ucumCode "kg.yr-1"^^qudt:UCUMcs ;
-  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
-  rdfs:label "kilogram per year"@en ;
-.
+
   unit:NUM-PER-KiloGM 
   a qudt:Unit ;
   a qudt:DerivedUnit ;
