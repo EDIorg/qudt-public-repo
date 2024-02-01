@@ -31985,7 +31985,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   a qudt:Unit ;
   a qudt:DerivedUnit ;
   dcterms:description "Count of an entity or phenomenon's occurrence divided by SI base unit kilogram"@en ;
-  qudt:conversionMultiplier 1 ;
+  qudt:conversionMultiplier 1.0 ;
   qudt:hasDimensionVector qkdv:A1E0L0I0M-1H0T0D0 ;
   qudt:hasQuantityKind quantitykind:AmountOfSubstancePerUnitMass ;
   qudt:hasQuantityKind quantitykind:Concentration ;
@@ -32046,7 +32046,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:plainTextDescription "Annual flux equivalent to 1000kg per hectare (10000 square meters) or one tonne per hectare per year, typically used to express a  crop yield." ;
     qudt:symbol "Mg/(ha⋅year)" ;
     qudt:ucumCode "Mg.har-1.year-1"^^qudt:UCUMcs ;
-	qudt:exactMatch "TONNE-PER-HA-YR";
+	  qudt:exactMatch unit:TONNE-PER-HA-YR;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     rdfs:label "Megagram per Hectare per Year"@en ;
 	# added by mobb
