@@ -46002,9 +46002,9 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   a qudt:DerivedUnit ;
   dcterms:description "Count of an entity or phenomenon's occurrence divided by SI base unit kilogram"@en ;
   qudt:conversionMultiplier 1.0 ;
-  qudt:hasDimensionVector qkdv:A1E0L0I0M-1H0T0D0 ;
-  qudt:hasQuantityKind quantitykind:AmountOfSubstancePerUnitMass ;
-  qudt:hasQuantityKind quantitykind:Concentration ;
+  qudt:hasDimensionVector qkdv:A0E0L0I0M-1H0T0D0 ;
+  qudt:hasQuantityKind quantitykind:Unknown ;
+  qudt:hasQuantityKind quantitykind:Unknown ;
   qudt:plainTextDescription "Count of an entity or phenomenon's occurrence divided by SI base unit kilogram" ;
   qudt:symbol "/kg" ;
   qudt:ucumCode "{#}.kg-1"^^qudt:UCUMcs ;
@@ -46015,7 +46015,13 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
 	# right now, qk Concentration has only one dimension vector (dimension:A1E0L-3I0M0H0T0D0), although the description says that it can be mass, molar, number, and volume)
 	# TO DO: confirm that this is a concentration (something similar should be typed that way - e.g., in oceaongraphy they use kg in the denominator) 
 	# also see quantitykind:ParticleNumberDensity (although that has only volumes in the denom)
-
+	# not a concentration. desription of concentration is wrong (per SR). 
+	#
+	# 2024-09-10: edited vector to A0. found 2 QKs with this vector: CostPerMass (one unit: CHF-PER-KiloGM), InverseMass. and a unit PER-KiloGM -- 
+    # serveral num-per-mass have qk=unknown.
+    # Do we will need a new QK for this one, and follow the CostPerMass example. Unknown for now.
+    # option A: this is PER-KiloGM 
+    # option B: new unit NUM-PER-KiloGM with exact match to PER-KiloGM, unknown (or new?) QK (copy NUM-PER-GM example) 
 .
   unit:MicroGM-PER-GM-HR 
   a qudt:Unit ;
