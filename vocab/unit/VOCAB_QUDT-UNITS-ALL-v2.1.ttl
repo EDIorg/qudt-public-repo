@@ -46056,7 +46056,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:applicableSystem sou:CGS-EMU ;
     qudt:applicableSystem sou:CGS-GAUSS ;
     qudt:applicableSystem sou:SI ;
-    qudt:conversionMultiplier 3.17e-09 ;
+    qudt:conversionMultiplier 0.00000000317 ;
     qudt:hasDimensionVector qkdv:A0E0L-2I0M1H0T-1D0 ;
     qudt:hasQuantityKind quantitykind:Flux ;
     qudt:plainTextDescription "Annual flux equivalent to 1000kg per hectare (10000 square meters) or one tonne per hectare per year, typically used to express a  crop yield." ;
@@ -46074,7 +46074,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:applicableSystem sou:CGS-EMU ;
     qudt:applicableSystem sou:CGS-GAUSS ;
     qudt:applicableSystem sou:SI ;
-    qudt:conversionMultiplier 2.78e-07 ;
+    qudt:conversionMultiplier 0.000000278 ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D0 ;
     qudt:hasQuantityKind quantitykind:Rate ;
     qudt:plainTextDescription "0.000001-fold of the SI base unit kilogram divided by the 0.001-fold of the SI base unit kilogram, divided by 3600-fold of the SI base unit second" ;
@@ -46098,7 +46098,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:applicableSystem sou:CGS-EMU ;
     qudt:applicableSystem sou:CGS-GAUSS ;
     qudt:applicableSystem sou:SI ;
-    qudt:conversionMultiplier 2.778e-7 ;
+    qudt:conversionMultiplier 0.0000002778 ;
     qudt:hasDimensionVector qkdv:A1E0L-2I0M1H0T-1D0 ;
     qudt:hasQuantityKind quantitykind:Flux ;
     qudt:plainTextDescription "Hourly molar flux equivalent to .001 moles per meter squared per hour, typically used to express an areal production (if plane is a surface of the earth or ocean)." ;
@@ -46116,7 +46116,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:applicableSystem sou:CGS-EMU ;
     qudt:applicableSystem sou:CGS-GAUSS ;
     qudt:applicableSystem sou:SI ;
-    qudt:conversionMultiplier 1e-09 ;
+    qudt:conversionMultiplier 0.000000001 ;
     qudt:hasDimensionVector qkdv:A1E0L-2I0M1H0T-1D0 ;
     qudt:hasQuantityKind quantitykind:Flux ;
     qudt:plainTextDescription "Molar flux equivalent to 1e-9 moles per meter squared per sec." ;
