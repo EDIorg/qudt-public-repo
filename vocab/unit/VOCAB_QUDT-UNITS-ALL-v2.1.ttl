@@ -45947,22 +45947,25 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   rdfs:label "micromole per meter per square second"@en-us ;
 .
  
- unit:IN-PER-YR
-  a qudt:DerivedUnit ;
-  a qudt:Unit ;
-  dcterms:description "inch according to the Anglo-American and the Imperial system of units divided by year" ;
-  qudt:applicableSystem sou:SI ;
-  qudt:conversionMultiplier 0.00000000080487743048 ;
-  qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T-1D0 ;
-  qudt:hasQuantityKind quantitykind:Velocity ;
-  qudt:hasQuantityKind quantitykind:LinearVelocity ;
-  qudt:plainTextDescription "inch according to the Anglo-American and the Imperial system of units divided by year" ;
-  qudt:symbol "in/yr" ;
-  qudt:ucumCode "in.yr-1"^^qudt:UCUMcs ;
-  qudt:ucumCode "in/yr"^^qudt:UCUMcs ;
-  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
-  rdfs:label "inche per year"@en ;
-.
+# unit:IN-PER-YR
+#  a qudt:DerivedUnit ;
+#  a qudt:Unit ;
+#  dcterms:description "inch according to the Anglo-American and the Imperial system of units divided by year" ;
+#  qudt:applicableSystem sou:SI ;
+#  qudt:conversionMultiplier 0.00000000080487743048 ;
+# qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T-1D0 ;
+#  qudt:hasQuantityKind quantitykind:Velocity ;
+#  qudt:hasQuantityKind quantitykind:LinearVelocity ;
+#  qudt:plainTextDescription "inch according to the Anglo-American and the Imperial system of units divided by year" ;
+#  qudt:symbol "in/yr" ;
+#  qudt:ucumCode "in.yr-1"^^qudt:UCUMcs ;
+#  qudt:ucumCode "in/yr"^^qudt:UCUMcs ;
+#  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
+#  rdfs:label "inche per year"@en ;
+#.
+# added by who? appears to be redundant.
+
+
  unit:LB-PER-AC
   a qudt:DerivedUnit ;
   a qudt:Unit ;
