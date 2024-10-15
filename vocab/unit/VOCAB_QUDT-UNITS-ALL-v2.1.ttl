@@ -46074,6 +46074,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
 	# added by mobb
 	# had originally put quantitykind:Flux. (as in, any effect that travels thru a surface). so denominator has time and area, numerator varies. 
 	# to do, ask Steve.
+	# also, getting an info-note on this one - does exactMatch need to be reciprocated?
   .
   unit:MilliGM-PER-GM-HR
     a qudt:Unit ;
