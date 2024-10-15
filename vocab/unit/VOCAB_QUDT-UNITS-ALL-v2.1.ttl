@@ -46072,6 +46072,8 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     rdfs:label "Megagram per Hectare per Year"@en ;
 	# added by mobb
+	# had originally put quantitykind:Flux. (as in, any effect that travels thru a surface). so denominator has time and area, numerator varies. 
+	# to do, ask Steve.
   .
   unit:MilliGM-PER-GM-HR
     a qudt:Unit ;
