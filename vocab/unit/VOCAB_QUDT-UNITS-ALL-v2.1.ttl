@@ -46135,6 +46135,8 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     rdfs:label "Nanomole per Square Metre per second"@en ;
 	# added by mobb ;
 	# would like to add to the description - maybe this is used for light? ; 
+	# no qk for this dimension vector
+
   .
   unit:MilliM-PER-M2
     a qudt:Unit ;
