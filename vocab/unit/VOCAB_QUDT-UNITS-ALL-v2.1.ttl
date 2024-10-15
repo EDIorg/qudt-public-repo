@@ -46115,6 +46115,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     rdfs:label "Millimole per Square Metre per Hour"@en ;
 	# added by mobb ;
+	# no qk for this dimension vector
   .
   unit:NanoMOL-PER-M2-SEC
     a qudt:DerivedUnit ;
