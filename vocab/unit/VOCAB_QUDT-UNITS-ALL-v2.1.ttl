@@ -45804,7 +45804,7 @@ unit:NanoMOL-PER-GM-HR
   qudt:applicableSystem sou:CGS-GAUSS ;
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 1.0 ;
-  qudt:hasDimensionVector qkdv:A0E0L-1I0M0H0TD0 ;
+  qudt:hasDimensionVector qkdv:A0E0L-1I0M0H0T0D0 ; 
   qudt:hasQuantityKind quantitykind:InverseLength ;
   qudt:symbol "m/m2" ;
   qudt:ucumCode "m.m-2"^^qudt:UCUMcs ;
@@ -46064,7 +46064,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:applicableSystem sou:SI ;
     qudt:conversionMultiplier 0.00000000317 ;
     qudt:hasDimensionVector qkdv:A0E0L-2I0M1H0T-1D0 ;
-    qudt:hasQuantityKind quantitykind:Flux ;
+    qudt:hasQuantityKind quantitykind:MassPerAreaTime ;
     qudt:plainTextDescription "Annual flux equivalent to 1000kg per hectare (10000 square meters) or one tonne per hectare per year, typically used to express a  crop yield." ;
     qudt:symbol "Mg/(ha⋅year)" ;
     qudt:ucumCode "Mg.har-1.year-1"^^qudt:UCUMcs ;
