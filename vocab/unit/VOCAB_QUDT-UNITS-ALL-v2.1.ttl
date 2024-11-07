@@ -45745,6 +45745,7 @@ unit:MicroGM-PER-GM-DAY
   qudt:ucumCode "ug/g/d"^^qudt:UCUMcs ;
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
   rdfs:label "Microgram per Gram per Day"@en ;
+  # mob note: suspect that the dv is wrong, and it should be D0, not D1. 
   .
 unit:MicroGM-PER-MilliGM
   a qudt:Unit ;
@@ -45795,6 +45796,8 @@ unit:NanoMOL-PER-GM-HR
   # to do - fine-tune QK. use so far is for enzymatic activity, specific to an amt of substrate (soil). found it in hfr.254.4, hfr 371.1, knz.159.1  
   # quantitykind:CatalyticActivity is close (wrong dimension vector). 
   # also see this specific uptake rate. see MilliGM-PER-GM-HR - maybe these should have qk = mass-specific rate (or something like that. some will have A in the numerator, some M)
+  # our basic problem with the QKs is that their are very few that represent enviro sci measurements. so if we can match them, it's to the ones that seem somewhat redundant with the unit, and so arent particularly useful (e.g., MassPerAreaTime) 
+  # we need a whole bunch of new QKs - but need to examine  measurements for that
   .
   unit:M-PER-M2
   a qudt:Unit ;
