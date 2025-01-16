@@ -46119,7 +46119,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:applicableSystem sou:SI ;
     qudt:conversionMultiplier 0.001 ;
     qudt:hasDimensionVector qkdv:A0E0L-1I0M0H0T0D0 ;
-    qudt:hasQuantityKind quantitykind:unknown ;
+    qudt:hasQuantityKind quantitykind:Unknown ;
     qudt:plainTextDescription "0,001-fold of the SI base unit meter divided by the power of the SI base unit metre with the exponent 2" ;
     qudt:qkdvDenominator qkdv:A0E0L1I0M0H0T0D0 ;
     qudt:qkdvNumerator qkdv:A0E0L-2I0M0H0T0D0 ;
