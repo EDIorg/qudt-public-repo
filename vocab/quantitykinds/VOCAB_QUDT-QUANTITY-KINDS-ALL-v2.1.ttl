@@ -28782,6 +28782,22 @@ quantitykind:MolarFluxDensity
   qudt:plainTextDescription "the rate at which moles of a substance pass through a unit area per unit time. It is used for describing the flow of materials in terms of the transport of molecules or particles rather than bulk mass. The SI units are mol m-2 s-1" ;
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
   rdfs:label "Molar Flux Density"@en ;
-# addd by mob. question: how are applicableUnit determined? I added in our two new units, but commented out the ones from PPFD, which is very similar.
+# addd by mobb. question: how are applicableUnit determined? I added in our two new units, but commented out the ones from PPFD, which is very similar.
 
 .
+
+quantitykind:MassSpecificBiogeochemicalRate
+  a qudt:QuantityKind ;
+  dcterms:description "the rate at which a specific chemical element or compound is processed or transformed within an ecosystem, calculated per unit mass of the relevant biological material. Unreduced, SI unit is g * g-1 * s-1" ;
+  qudt:applicableUnit unit:MicroGM-PER-GM-DAY ;
+  qudt:applicableUnit unit:MicroGM-PER-GM-HR ;
+  qudt:applicableUnit unit:MilliGM-PER-GM-HR ;
+  qudt:applicableUnit unit:MilliGM-PER-KiloGM-Day ;
+  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D0 ;
+  qudt:qkdvNumerator qkdv:A0E0L3I0M1H0T0D0 ;
+  qudt:qkdvDenominator qkdv:A0E0L0I0M1H0T1D0 ;
+  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+  qudt:informativeReference "TO DO - this was google AI! but dig a bit" ;
+  qudt:plainTextDescription "the rate at which a specific chemical element or compound is processed or transformed within an ecosystem, calculated per unit mass of the relevant biological material. Unreduced, SI unit is g * g-1 * s-1" ;
+  rdfs:label "Mass Specific Biogeochemical Rate"@en ;
+# addd by mobb

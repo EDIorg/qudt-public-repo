@@ -45718,7 +45718,7 @@ unit:MicroGM-PER-GM-DAY
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 0.0000000001157407407 ;
   qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D1 ;
-  qudt:hasQuantityKind quantitykind:MassRatioPerTime ;
+  qudt:hasQuantityKind quantitykind:MassSpecificBiogeochemicalRate ;
   qudt:plainTextDescription "mass ratio as 0.000000001-fold of the SI base unit kilogram divided by 0.001-fold of the SI base unit kilogram per day (8640 seconds)" ;
   qudt:qkdvDenominator qkdv:A0E0L0I0M1H0T1D0 ;
   qudt:qkdvNumerator qkdv:A0E0L0I0M1H0T0D0 ;
@@ -45768,8 +45768,7 @@ unit:NanoMOL-PER-GM-HR
   dcterms:description "10^-9 SI unit of the quantity of matter per SI unit of mass per unit of time expressed in hour (3,600 seconds)."@en ;
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 0.000000000277777777777778 ;
-  # qudt:hasQuantityKind quantitykind:Unknown ;
-  qudt:hasQuantityKind quantitykind:Rate ;
+  qudt:hasQuantityKind quantitykind:Unknown ;
   qudt:hasDimensionVector qkdv:A1E0L0I0M-1H0T-1D0 ;
   qudt:symbol "nmol/(g.hr)" ;
   qudt:ucumCode "nmol.g-1.h-1"^^qudt:UCUMcs ;
@@ -45858,7 +45857,7 @@ unit:MilliGM-PER-KiloGM-DAY
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 0.0000000001157407407 ;
   qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D1 ;
-  qudt:hasQuantityKind quantitykind:MassRatioPerTime ;
+  qudt:hasQuantityKind quantitykind:MassSpecificBiogeochemicalRate ;
   qudt:plainTextDescription "mass ratio as 0.000000001-fold of the SI base unit kilogram divided by 0.001-fold of the SI base unit kilogram per day (8640 seconds)" ;
   qudt:qkdvDenominator qkdv:A0E0L0I0M1H0T1D0 ;
   qudt:qkdvNumerator qkdv:A0E0L0I0M1H0T0D0 ;
@@ -46000,9 +45999,8 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   dcterms:description "0.0000000001-fold of the SI base unit kilogram divided by 0.0001-fold of the SI base unit kilogram over a period of 1 hour "@en ;
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 277777777.8;
-  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D1 ;
-  qudt:hasQuantityKind quantitykind:Unknown ; 
-  qudt:hasQuantityKind quantitykind:Rate ; 
+  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D1 ; 
+  qudt:hasQuantityKind quantitykind:MassSpecificBiogeochemicalRate ; 
   qudt:plainTextDescription "0.0000000001-fold of the SI base unit kilogram divided by 0.0001-fold of the SI base unit kilogram over a period of 1 hour " ;
   qudt:symbol "ugram/g/hr)" ;
   qudt:ucumCode "ug.g-1.hr-1"^^qudt:UCUMcs ;
@@ -46056,10 +46054,10 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:applicableSystem sou:SI ;
     qudt:conversionMultiplier 0.000000278 ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D0 ;
-    qudt:hasQuantityKind quantitykind:Rate ;
+    qudt:hasQuantityKind quantitykind:MassSpecificBiogeochemicalRate ;
     qudt:plainTextDescription "0.000001-fold of the SI base unit kilogram divided by the 0.001-fold of the SI base unit kilogram, divided by 3600-fold of the SI base unit second" ;
-    qudt:qkdvDenominator qkdv:A0E0L0I0M1H0T0D0 ;
-    qudt:qkdvNumerator qkdv:A0E0L0I0M1H0T-1D0 ;
+    qudt:qkdvDenominator qkdv:A0E0L0I0M1H0T1D0 ;
+    qudt:qkdvNumerator qkdv:A0E0L0I0M1H0T1D0 ;
     qudt:symbol "mg/gm/h" ;
     qudt:ucumCode "mg.g-1.h-1"^^qudt:UCUMcs ;
     qudt:ucumCode "mg/g/h"^^qudt:UCUMcs ;
