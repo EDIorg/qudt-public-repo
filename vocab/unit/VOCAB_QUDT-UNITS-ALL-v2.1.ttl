@@ -45549,32 +45549,14 @@ THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDE
   rdfs:label "QUDT Unit of Measure Vocabulary Metadata Version 2.1.41" ;
 .
 
+###
+##
 #
+##
+###
 ## EDI units added here
 #
 
-unit:KiloM2
-  a qudt:DerivedUnit ;
-  a qudt:Unit ;
-  dcterms:description "A unit of area equal to that of a square, of sides 1 kilometer"^^rdf:HTML ;
-  qudt:applicableSystem sou:CGS ;
-  qudt:applicableSystem sou:CGS-EMU ;
-  qudt:applicableSystem sou:CGS-GAUSS ;
-  qudt:applicableSystem sou:SI ;
-  qudt:conversionMultiplier 1000000.0;
-  qudt:derivedUnitOfSystem sou:CGS ;
-  qudt:derivedUnitOfSystem sou:CGS-GAUSS ;
-  qudt:expression "\\(sqkm\\)"^^qudt:LatexString ;
-  qudt:hasDimensionVector qkdv:A0E0L2I0M0H0T0D0 ;
-  qudt:hasQuantityKind quantitykind:Area ;
-  qudt:plainTextDescription "A unit of area equal to that of a square, of sides 1 kilometer" ;
-  qudt:prefix prefix:Kilo ;
-  qudt:symbol "km²" ;
-  qudt:ucumCode "km2"^^qudt:UCUMcs ;
-  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
-  rdfs:label "Square Kilometer"@en-us ;
-  rdfs:label "Square Kilometre"@en ;
-.
 unit:GM-PER-HectoGM
   a qudt:Unit ;
   dcterms:description "0,001-fold of the SI base unit kilogram divided by 0.1-fold of the SI base unit kilogram" ;
@@ -46097,8 +46079,8 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:applicableSystem sou:CGS-GAUSS ;
     qudt:applicableSystem sou:SI ;
     qudt:conversionMultiplier 0.0000002778 ;
-    qudt:hasDimensionVector qkdv:A1E0L-2I0M1H0T-1D0 ;
-    qudt:hasQuantityKind quantitykind:Flux ;
+    qudt:hasDimensionVector qkdv:A1E0L-2I0M0H0T-1D0 ;
+    qudt:hasQuantityKind quantitykind:MolarFluxDensity ;
     qudt:plainTextDescription "Hourly molar flux equivalent to .001 moles per meter squared per hour, typically used to express an areal production (if plane is a surface of the earth or ocean)." ;
     qudt:symbol "mmol/m²/hr" ;
     qudt:ucumCode "mmol.m-2.h-1"^^qudt:UCUMcs ;
@@ -46116,8 +46098,8 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:applicableSystem sou:CGS-GAUSS ;
     qudt:applicableSystem sou:SI ;
     qudt:conversionMultiplier 0.000000001 ;
-    qudt:hasDimensionVector qkdv:A1E0L-2I0M1H0T-1D0 ;
-    qudt:hasQuantityKind quantitykind:Flux ;
+    qudt:hasDimensionVector qkdv:A1E0L-2I0M0H0T-1D0 ;
+    qudt:hasQuantityKind quantitykind:MolarFluxDensity ;
     qudt:plainTextDescription "Molar flux equivalent to 1e-9 moles per meter squared per sec." ;
     qudt:symbol "nmol/m²/sec" ;
     qudt:ucumCode "nmol.m-2.s-1"^^qudt:UCUMcs ;

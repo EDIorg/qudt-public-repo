@@ -28757,3 +28757,31 @@ vaem:GMD_QUDT-QUANTITY-KINDS-ALL
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
   rdfs:label "QUDT Quantity Kind Vocabulary Metadata Version 2.1.41" ;
 .
+
+
+###
+##
+#
+##
+### EDI additions start here
+quantitykind:MolarFluxDensity
+  a qudt:QuantityKind ;
+  dcterms:description "the rate at which moles of a substance pass through a unit area per unit time. It is used for describing the flow of materials in terms of the transport of molecules or particles rather than bulk mass. The SI units are mol m-2 s-1" ;
+  qudt:applicableUnit unit:MilliMOL-PER-M2-HR;
+  qudt:applicableUnit unit:NanoMOL-PER-M2-SEC;
+  
+#  qudt:applicableUnit unit:MicroMOL-PER-M2-DAY ;
+#  qudt:applicableUnit unit:MicroMOL-PER-M2-HR ;
+#  qudt:applicableUnit unit:MicroMOL-PER-M2-SEC ;
+#  qudt:applicableUnit unit:MilliMOL-PER-M2-DAY ;
+#  qudt:applicableUnit unit:MilliMOL-PER-M2-SEC ;
+#  qudt:applicableUnit unit:NanoMOL-PER-M2-DAY ;
+#  qudt:applicableUnit unit:PicoMOL-PER-M2-DAY ;
+  qudt:hasDimensionVector qkdv:A1E0L-2I0M0H0T-1D0 ;
+  qudt:informativeReference "https://en.wikipedia.org/wiki/Mass_flux#Molar_fluxes"^^xsd:anyURI ;
+  qudt:plainTextDescription "the rate at which moles of a substance pass through a unit area per unit time. It is used for describing the flow of materials in terms of the transport of molecules or particles rather than bulk mass. The SI units are mol m-2 s-1" ;
+  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+  rdfs:label "Molar Flux Density"@en ;
+# addd by mob. question: how are applicableUnit determined? I added in our two new units, but commented out the ones from PPFD, which is very similar.
+
+.
