@@ -45604,27 +45604,27 @@ unit:MicroS-PER-CM
   rdfs:label "Microsiemen Per Centimeter"@en-us ;
 # christine
 .
-unit:MicroS-PER-CM2
+unit:MicroS2-PER-CM2
   a qudt:Unit ;
-  dcterms:description "0.000001-fold of the SI derived unit siemens divided by the squared 0,01-fold of the SI base unit meter" ;
-  qudt:plainTextDescription "0.000001-fold of the SI derived unit siemens divided by the squared 0,01-fold of the SI base unit meter" ;
+   dcterms:description "Conductivity variance, or (MicroS-PER-CM)2" ;
+   qudt:plainTextDescription "Conductivity variance, or (MicroS-PER-CM)2" ;
+#  dcterms:description "0.000001-fold of the SI derived unit siemens  divided by the squared 0,01-fold of the SI base unit meter" ;
+#  qudt:plainTextDescription "0.000001-fold of the SI derived unit siemens divided by the squared 0,01-fold of the SI base unit meter" ;
   qudt:applicableSystem sou:CGS ;
   qudt:applicableSystem sou:CGS-EMU ;
   qudt:applicableSystem sou:CGS-GAUSS ;
   qudt:applicableSystem sou:SI ;
-  qudt:conversionMultiplier 0.01 ;
-  qudt:expression "\\(uS-cm^{-2}\\)"^^qudt:LatexString ;
-  qudt:hasDimensionVector qkdv:A0E2L-4I0M-1H0T3D0 ;
-  qudt:qkdvNumerator qkdv:A0E2L-2I0M-1H0T3D0 ;
-  qudt:qkdvDenominator qkdv:A0E0L2I0M0H0T0D0 ;
-  qudt:hasQuantityKind quantitykind:ElectrolyticConductivity ;
-  qudt:symbol "uS/cm2" ;
+ # qudt:conversionMultiplier 0.01 ;
+  qudt:expression "\\(uS{2}-cm^{-2}\\)"^^qudt:LatexString ;
+  qudt:hasDimensionVector qkdv:A0E4L-6I0M-2H0T6D0 ;
+  qudt:hasQuantityKind quantitykind:ConductivityVariance_NEON ;
+  qudt:symbol "uS2/cm2" ;
   rdf:type qudt:Unit ;
-  qudt:ucumCode "uS.cm-2"^^qudt:UCUMcs ;
-  qudt:ucumCode "uS/cm2"^^qudt:UCUMcs ;
+  qudt:ucumCode "uS2.cm-2"^^qudt:UCUMcs ;
+  qudt:ucumCode "uS2/cm2"^^qudt:UCUMcs ;
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
-  rdfs:label "Microsiemen Per Squared Centimetre"@en ;
-  rdfs:label "Microsiemen Per Squared Centimeter"@en-us ;
+  rdfs:label "Microsiemen Squared Per Centimetre Squared"@en ;
+  rdfs:label "Microsiemen Squared Per Centimeter Squared"@en-us ;
 # christine
 # to do: confirm dimension vector, quantityKind
 # to do: it would help to have something in the description to distinguish this unit from microS-per-cm -- i.e., the cm^2
@@ -45669,12 +45669,12 @@ unit:DEG_C2
   qudt:applicableSystem sou:CGS ;
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 1.0 ;
-  qudt:hasQuantityKind quantitykind:Temperature ;
-  qudt:hasDimensionVector qkdv:A0E0L0I0M0H2TD0 ;
+  qudt:hasQuantityKind quantitykind:TemperatureVariance_NEON ;
+  qudt:hasDimensionVector qkdv:A0E0L0I0M0H2T0D0 ;
   qudt:symbol "°C²" ;
   qudt:ucumCode "K2"^^qudt:UCUMcs ;
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
-  rdfs:label "Square Degrees Celsius"@en ;
+  rdfs:label "Degrees Celsius Squared"@en ;
 .
 unit:NUM-PER-MilliL
   a qudt:Unit ;
@@ -45717,7 +45717,7 @@ unit:MicroGM-PER-GM-DAY
   qudt:applicableSystem sou:CGS-GAUSS ;
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 0.0000000001157407407 ;
-  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D1 ;
+  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D0 ;
   qudt:hasQuantityKind quantitykind:MassSpecificBiogeochemicalRate ;
   qudt:plainTextDescription "mass ratio as 0.000000001-fold of the SI base unit kilogram divided by 0.001-fold of the SI base unit kilogram per day (8640 seconds)" ;
   qudt:qkdvDenominator qkdv:A0E0L0I0M1H0T1D0 ;
@@ -45805,13 +45805,12 @@ unit:MicroGM-PER-L-DAY
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 0.00000000001157407407407407 ;
   qudt:hasDimensionVector qkdv:A0E0L-3I0M1H0T-1D0 ;
-  # qudt:hasQuantityKind quantitykind:Unknown ;
-  qudt:hasQuantityKind quantitykind:Rate ;
+  qudt:hasQuantityKind quantitykind:MassConcentrationRateOfChange ;
   qudt:symbol "µg/(Lâ‹…day)" ;
   qudt:ucumCode "ug.L-1.d-1"^^qudt:UCUMcs ;
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
   rdfs:label "Micrograms per litre per hour"@en ;
-  # might be an uptake rate, or production rate.
+  # mobb.
 .
 unit:KiloW-PER-M2
   a qudt:Unit ;
@@ -45856,7 +45855,7 @@ unit:MilliGM-PER-KiloGM-DAY
   qudt:applicableSystem sou:CGS-GAUSS ;
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 0.0000000001157407407 ;
-  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D1 ;
+  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D0 ;
   qudt:hasQuantityKind quantitykind:MassSpecificBiogeochemicalRate ;
   qudt:plainTextDescription "mass ratio as 0.000000001-fold of the SI base unit kilogram divided by 0.001-fold of the SI base unit kilogram per day (8640 seconds)" ;
   qudt:qkdvDenominator qkdv:A0E0L0I0M1H0T1D0 ;
@@ -45915,23 +45914,41 @@ unit:KiloGM-PER-M2-DAY
   rdfs:label "kilogram per square metre per day"@en ;
 .
 
-  
-unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof quantitykind:AmountOfSubstancePerLengthPerTime_Squared 
+# ## MOB THINKS THIS IS BOGUS. it looks like a partial version of one of the NEON variances. 
+# unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof quantitykind:AmountOfSubstancePerLengthPerTime_Squared 
+#   a qudt:DerivedUnit ;
+#   a qudt:Unit ;
+#   dcterms:description "One part per 10**6 (million) of the SI unit of quantity of matter (the mole) per SI unit length per SI unit of time squared."@en ;
+#   qudt:applicableSystem sou:SI ;
+#   qudt:conversionMultiplier 0.000001 ;
+#   qudt:hasDimensionVector qkdv:A1E0L-2I0M0H0T-2D0 ;
+#   qudt:hasQuantityKind quantitykind:Unknown ;
+#   qudt:plainTextDescription "One part per 10**6 (million) of the SI unit of quantity of matter (the mole) per SI unit length per SI unit of time squared." ;
+#   qudt:symbol "umol/m/s²" ;
+#   qudt:ucumCode "umol.m-1.s-2"^^qudt:UCUMcs ;
+#   qudt:ucumCode "umol/m/s^2"^^qudt:UCUMcs ;
+#   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
+#   rdfs:label "micromole per metre per square second"@en ;
+#   rdfs:label "micromole per meter per square second"@en-us ;
+# .
+
+unit:MicroMOL2-PER-M4-SEC2 
   a qudt:DerivedUnit ;
   a qudt:Unit ;
-  dcterms:description "One part per 10**6 (million) of the SI unit of quantity of matter (the mole) per SI unit length per SI unit of time squared."@en ;
-  qudt:applicableSystem sou:SI ;
-  qudt:conversionMultiplier 0.000001 ;
-  qudt:hasDimensionVector qkdv:A1E0L-2I0M0H0T-2D0 ;
-  qudt:hasQuantityKind quantitykind:Unknown ;
-  qudt:plainTextDescription "One part per 10**6 (million) of the SI unit of quantity of matter (the mole) per SI unit length per SI unit of time squared." ;
-  qudt:symbol "umol/m/s²" ;
-  qudt:ucumCode "umol.m-1.s-2"^^qudt:UCUMcs ;
-  qudt:ucumCode "umol/m/s^2"^^qudt:UCUMcs ;
+  dcterms:description "NEON variance for a molar flux density, (uM/m^2/s)^2 ."@en ;
+#   qudt:applicableSystem sou:SI ;
+#   qudt:conversionMultiplier 0.000001 ;
+  qudt:hasDimensionVector qkdv:A2E0L-4I0M0H0T-2D0 ;
+  qudt:hasQuantityKind quantitykind:MolarFluxDensityVariance_NEON ;
+  qudt:plainTextDescription "NEON variance for a molar flux density, (uM/m^2/s)^2 ."@en ;
+  qudt:symbol "(uM/m^2/s)^2" ;
+  qudt:ucumCode "umol2.m-4.s-2"^^qudt:UCUMcs ;
+  qudt:ucumCode "umol2/m4/s^2"^^qudt:UCUMcs ;
   rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
-  rdfs:label "micromole per metre per square second"@en ;
-  rdfs:label "micromole per meter per square second"@en-us ;
+  rdfs:label "(micromole per metre squared per second) squared"@en ;
+  rdfs:label "(micromole per metre squared per second) squared"@en-us 
 .
+
  
  unit:LB-PER-AC
   a qudt:DerivedUnit ;
@@ -45999,7 +46016,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
   dcterms:description "0.0000000001-fold of the SI base unit kilogram divided by 0.0001-fold of the SI base unit kilogram over a period of 1 hour "@en ;
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 277777777.8;
-  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D1 ; 
+  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D0 ; 
   qudt:hasQuantityKind quantitykind:MassSpecificBiogeochemicalRate ; 
   qudt:plainTextDescription "0.0000000001-fold of the SI base unit kilogram divided by 0.0001-fold of the SI base unit kilogram over a period of 1 hour " ;
   qudt:symbol "ugram/g/hr)" ;
@@ -46037,7 +46054,7 @@ unit:MicroMOL-PER-M-SEC2 #optionally could define a new one along the linesof qu
     qudt:plainTextDescription "Annual flux equivalent to 1000kg per hectare (10000 square meters) or one tonne per hectare per year, typically used to express a  crop yield." ;
     qudt:symbol "Mg/(ha⋅year)" ;
     qudt:ucumCode "Mg.har-1.year-1"^^qudt:UCUMcs ;
-    qudt:exactMatch unit:TONNE-PER-HA-YR;
+    qudt:exactMatch unit:TONNE-PER-HA-YR ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     rdfs:label "Megagram per Hectare per Year"@en ;
 	# added by mobb
