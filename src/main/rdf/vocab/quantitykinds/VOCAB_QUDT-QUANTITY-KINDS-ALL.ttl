@@ -2755,6 +2755,14 @@ quantitykind:Concentration
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
   rdfs:label "Concentration"@en .
 
+quantitykind:ConcentrationRate
+  a qudt:QuantityKind ;
+  dcterms:description "ConcentrationRate represents a change in concentration over time." ;
+  dcterms:plainTextDescription "ConcentrationRate represents a change in concentration over time." ;
+  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D0 ;
+  rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
+  rdfs:label "Concentration Rate"@en .
+
 quantitykind:Conductance
   a qudt:QuantityKind ;
   dcterms:description """$\\textit{Conductance}$, for a resistive two-terminal element or two-terminal circuit with terminals A
@@ -2956,6 +2964,14 @@ quantitykind:Count
   qudt:plainTextDescription "\"Count\" is the value of a count of items." ;
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
   rdfs:label "Count"@en .
+
+quantitykind:CountPerLength
+  a qudt:QuantityKind ;
+  dcterms:description "Count per length quantifies the linear density of objects along linear features such as transects" ;
+  dcterms:plainTextDescription "Count per length quantifies the linear density of objects along linear features such as transects" ;
+  qudt:hasDimensionVector qkdv:A0E0L-1I0M0H0T0D0 ;
+  rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
+  rdfs:label "Count Per Length"@en .
 
 quantitykind:CountRate
   a qudt:QuantityKind ;
@@ -12042,6 +12058,21 @@ quantitykind:MolarRefractivity
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
   rdfs:label "Molar Refractivity"@en .
 
+quantitykind:MolarSpecificBiogeochemicalRate
+  a qudt:QuantityKind ;
+  dcterms:description """the rate at which a specific chemical element or compound is processed or transformed within an
+      ecosystem, calculated per  mole of the relevant biological material. Unreduced, SI unit is mole * mole-1 * s-1
+    """ ;
+  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D0 ;
+  qudt:informativeReference ""^^xsd:anyURI ;
+  qudt:plainTextDescription """the rate at which a specific chemical element or compound is processed or transformed within an
+      ecosystem, calculated per mole of the relevant biological material. Unreduced, SI unit is mol * mol-1 * s-1
+    """ ;
+  qudt:qkdvDenominator qkdv:A1E0L0I0M0H0T1D0 ;
+  qudt:qkdvNumerator qkdv:A1E0L0I0M0H0T0D0 ;
+  rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
+  rdfs:label "Molar Specific Biogeochemical Rate"@en .
+
 quantitykind:MolarThermalCapacity
   a qudt:QuantityKind ;
   dcterms:description "thermal capacity divided by the amount of substance"@en ;
@@ -12099,6 +12130,16 @@ quantitykind:MolarVolume
   rdfs:label "摩尔体积"@zh ;
   skos:altLabel "molares Volumen"@de ;
   skos:altLabel "stoffmengenbezogenes Volumen"@de .
+
+quantitykind:MolarVolumetricRate
+  a qudt:QuantityKind ;
+  qudt:hasDimensionVector qkdv:A1E0L-3I0M0H0T-1D0 ;
+  qudt:informativeReference ""^^xsd:anyURI ;
+  qudt:plainTextDescription "Measures change in a molar contectration over time. " ;
+  qudt:qkdvDenominator qkdv:A0E0L-3I0M0H0T-1D0 ;
+  qudt:qkdvNumerator qkdv:A1EL0I0M0H0T0D0 ;
+  rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
+  rdfs:label "Molar Volumetric Rate"@en .
 
 quantitykind:MoleFraction
   a qudt:QuantityKind ;
@@ -14276,6 +14317,14 @@ quantitykind:PressureLossPerLength
   """ ;
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
   rdfs:label "Pressure Loss per Length"@en .
+
+quantitykind:PressureNormalizedMolarConcentration
+  a qudt:QuantityKind ;
+  qudt:hasDimensionVector qkdv:A1E0L2I0M-1H0T2D0 ;
+  qudt:informativeReference ""^^xsd:anyURI ;
+  qudt:plainTextDescription "Measures how much a molar contectration changes per unit of pressure. Compolsed of a gas or solute's concentration divided (or normalized) by the system's partial pressue. Derived from the Ideal Gas Law. " ;
+  rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
+  rdfs:label "Pressure-normalized Molar Concentration"@en .
 
 quantitykind:PressureRatio
   a qudt:QuantityKind ;
@@ -19883,6 +19932,16 @@ quantitykind:VolumePerTime
   qudt:qkdvNumerator qkdv:A0E0L3I0M0H0T0D0 ;
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
   rdfs:label "Volume per Time"@en .
+
+quantitykind:VolumeRatio
+  a qudt:QuantityKind ;
+  qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D1 ;
+  qudt:informativeReference ""^^xsd:anyURI ;
+  qudt:plainTextDescription "Ratio of two volumes. " ;
+  qudt:qkdvDenominator qkdv:A0E0L-3I0M0H0T0D0 ;
+  qudt:qkdvNumerator qkdv:A0EL3I0M0H0T0D0 ;
+  rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
+  rdfs:label "Volume Ratio"@en .
 
 quantitykind:VolumeStrain
   a qudt:QuantityKind ;
