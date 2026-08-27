@@ -1808,6 +1808,12 @@ qkdv:A1E0L2I0M-1H0T2D0
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/dimensionvector> ;
   rdfs:label "A1E0L2I0M-1H0T2D0" .
 
+qkdv:A2E0L-4I0M0H0T-2D0
+  a qudt:QuantityKindDimensionVector ;
+  qudt:latexDefinition " $A^{2}$ $L^{-4}$ $T^{-2}$"^^qudt:LatexString ;
+  rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/dimensionvector> ;
+  rdfs:label "A2E0L-4I0M0H0T-2D0" .
+
 qkdv:NotApplicable
   a qudt:QuantityKindDimensionVector, qudt:QuantityKindDimensionVector_ISO, qudt:QuantityKindDimensionVector_Imperial, qudt:QuantityKindDimensionVector_SI ;
   dcterms:description "This is a placeholder dimension vector used in cases where there is no appropriate dimension vector"^^rdf:HTML ;
