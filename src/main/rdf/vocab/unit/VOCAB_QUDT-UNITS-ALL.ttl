@@ -28713,12 +28713,10 @@ unit:KiloJ-PER-M2
   qudt:expression "$kJ/m^2$"^^qudt:LatexString ;
   qudt:hasDimensionVector qkdv:A0E0L0I0M1H0T-2D0 ;
   qudt:hasFactorUnit [
-    a qudt:FactorUnit ;
     qudt:exponent -2 ;
     qudt:hasUnit unit:M ;
   ] ;
   qudt:hasFactorUnit [
-    a qudt:FactorUnit ;
     qudt:exponent 1 ;
     qudt:hasUnit unit:KiloJ ;
   ] ;
@@ -28728,7 +28726,8 @@ unit:KiloJ-PER-M2
   qudt:hasQuantityKind quantitykind:StrainEnergyReleaseRate ;
   qudt:symbol "kJ/m²" ;
   qudt:ucumCode "kJ.m-2"^^qudt:UCUMcs ;
-  rdfs:isDefinedBy <http://qudt.org/vocab/unit> ;
+  rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/unit> ;
+  rdfs:label "Chilojoule per Metro Quadrato"@it ;
   rdfs:label "Kilodżul na Metr Kwadratowy"@pl ;
   rdfs:label "Kilojoule na Kvadratni Meter"@sl ;
   rdfs:label "Kilojoule na Čtvereční Metr"@cs ;
@@ -28736,7 +28735,6 @@ unit:KiloJ-PER-M2
   rdfs:label "Kilojoule pe Metru Pătrat"@ro ;
   rdfs:label "Kilojoule per Meter Persegi"@ms ;
   rdfs:label "Kilojoule per Metrekare"@tr ;
-  rdfs:label "Kilojoule per Metro Quadrato"@it ;
   rdfs:label "Kilojoule per Square Meter"@en-US ;
   rdfs:label "Kilojoule per Square Metre"@en ;
   rdfs:label "Kilojoule pro Quadratmeter"@de ;
@@ -29104,6 +29102,7 @@ unit:KiloM-PER-KiloM2
   qudt:applicableSystem sou:CGS-GAUSS ;
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 0.0010 ;
+  qudt:conversionMultiplierSN 1.0E-3 ;
   qudt:hasDimensionVector qkdv:A0E0L-1I0M0H0T0D0 ;
   qudt:hasFactorUnit [
     qudt:exponent -2 ;
@@ -29118,9 +29117,19 @@ unit:KiloM-PER-KiloM2
   qudt:symbol "km/km²" ;
   qudt:ucumCode "km.km-2"^^qudt:UCUMcs ;
   rdfs:isDefinedBy <http://qudt.org/3.1.2/vocab/unit> ;
-  rdfs:label "Kilometer per Square Kilometer"@en ;
-  rdfs:label "Kilometers per square kilometer"@en-US ;
-  rdfs:label "Kilometres per square kilometre"@en .
+  rdfs:label "Chilometro per Chilometro Quadrato"@it ;
+  rdfs:label "Kilometer na Kvadratni Kilometer"@sl ;
+  rdfs:label "Kilometer per Kilometer Persegi"@ms ;
+  rdfs:label "Kilometer per Square Kilometer"@en-US ;
+  rdfs:label "Kilometer pro Quadratkilometer"@de ;
+  rdfs:label "Kilometr na Kilometr Kwadratowy"@pl ;
+  rdfs:label "Kilometr na Čtvereční Kilometr"@cs ;
+  rdfs:label "Kilometre per Kilometrekare"@tr ;
+  rdfs:label "Kilometre per Square Kilometre"@en ;
+  rdfs:label "Kilometro por Kilometro Cuadrado"@es ;
+  rdfs:label "Kilometru pe Kilometru Pătrat"@ro ;
+  rdfs:label "Kilomètre par Kilomètre Carré"@fr ;
+  rdfs:label "Kilometre per Square Kilometre" .
 
 unit:KiloM-PER-SEC
   a qudt:Unit ;
@@ -35596,6 +35605,7 @@ unit:M2-PER-M3
   qudt:applicableSystem sou:CGS-GAUSS ;
   qudt:applicableSystem sou:SI ;
   qudt:conversionMultiplier 1.0 ;
+  qudt:conversionMultiplierSN 1.0E0 ;
   qudt:hasDimensionVector qkdv:A0E0L-1I0M0H0T0D0 ;
   qudt:hasFactorUnit [
     qudt:exponent -3 ;
@@ -35606,13 +35616,29 @@ unit:M2-PER-M3
     qudt:hasUnit unit:M ;
   ] ;
   qudt:hasQuantityKind quantitykind:InverseLength ;
+  qudt:hasReciprocalUnit unit:M3-PER-M2 ;
   qudt:plainTextDescription "Square meter per cubic meter represents surface area to volume ratio, commonly used in environmental engineering for characterizing porous media, biological surface areas, or habitat complexity." ;
   qudt:symbol "m²/m³" ;
   qudt:ucumCode "m2.m-3"^^qudt:UCUMcs ;
-  rdfs:isDefinedBy <http://qudt.org/3.1.2/vocab/unit> ;
-  rdfs:label "Meters squared per cubic Meter"@en ;
-  rdfs:label "Square meters per cubic meter"@en-US ;
-  rdfs:label "Square metres per cubic metre"@en .
+  rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/unit> ;
+  rdfs:label "Kvadratni Meter na Kubični Meter"@sl ;
+  rdfs:label "Meter Persegi per Meter Kubik"@ms ;
+  rdfs:label "Metr Kwadratowy na Metr Sześcienny"@pl ;
+  rdfs:label "Metrekare per Metreküp"@tr ;
+  rdfs:label "Metro Cuadrado por Metro Cúbico"@es ;
+  rdfs:label "Metro Quadrado por Metro Cúbico"@pt ;
+  rdfs:label "Metro Quadrato per Metro Cubo"@it ;
+  rdfs:label "Metru Pătrat pe Metru Cub"@ro ;
+  rdfs:label "Metrum Quadratum per Metrum Cubicum"@la ;
+  rdfs:label "Mètre Carré par Mètre Cube"@fr ;
+  rdfs:label "Quadratmeter pro Kubikmeter"@de ;
+  rdfs:label "Square Meter per Cubic Meter"@en-US ;
+  rdfs:label "Square Metre per Cubic Metre"@en ;
+  rdfs:label "Čtvereční Metr na Metr Krychlový"@cs ;
+  rdfs:label "Τετραγωνικό Μέτρο ανά Κυβικό Μέτρο"@el ;
+  rdfs:label "Квадратен Метър на Кубичен Метър"@bg ;
+  rdfs:label "Квадратный Метр на Кубический Метр"@ru ;
+  rdfs:label "Square Metre per Cubic Metre" .
 
 unit:M2-PER-MOL
   a qudt:DerivedUnit, qudt:Unit ;
@@ -36506,6 +36532,7 @@ unit:M3-PER-M2
   qudt:conversionMultiplier 1.0 ;
   qudt:conversionMultiplierSN 1.0E0 ;
   qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T0D0 ;
+  qudt:hasReciprocalUnit unit:M2-PER-M3 ;
   qudt:plainTextDescription """power of the SI base unit metre with the exponent 3 divided by the power of the SI base unit metre
     with the exponent 2
   """ ;
