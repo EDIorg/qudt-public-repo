@@ -28700,6 +28700,49 @@ unit:KiloJ-PER-KiloV
   rdfs:label "Kilojulio por Kilovoltio"@es ;
   rdfs:label "Kilojoule per Kilovolt" .
 
+unit:KiloJ-PER-M2
+  a qudt:DerivedUnit, qudt:Unit ;
+  dcterms:description "Kilojoule Per Square Meter is a unit in the category of Energy density. It is also known as Kilojoules per square meter, Kilojoule per square metre, Kilojoule/square meter, Kilojoule/square metre."^^qudt:LatexString ;
+  qudt:applicableSystem sou:CGS ;
+  qudt:applicableSystem sou:CGS-EMU ;
+  qudt:applicableSystem sou:CGS-GAUSS ;
+  qudt:applicableSystem sou:SI ;
+  qudt:conversionMultiplier 1000.0 ;
+  qudt:conversionMultiplierSN 1.0E3 ;
+  qudt:definedUnitOfSystem sou:SI ;
+  qudt:expression "$kJ/m^2$"^^qudt:LatexString ;
+  qudt:hasDimensionVector qkdv:A0E0L0I0M1H0T-2D0 ;
+  qudt:hasFactorUnit [
+    a qudt:FactorUnit ;
+    qudt:exponent -2 ;
+    qudt:hasUnit unit:M ;
+  ] ;
+  qudt:hasFactorUnit [
+    a qudt:FactorUnit ;
+    qudt:exponent 1 ;
+    qudt:hasUnit unit:KiloJ ;
+  ] ;
+  qudt:hasQuantityKind quantitykind:EnergyFluence ;
+  qudt:hasQuantityKind quantitykind:EnergyPerArea ;
+  qudt:hasQuantityKind quantitykind:RadiantFluence ;
+  qudt:hasQuantityKind quantitykind:StrainEnergyReleaseRate ;
+  qudt:symbol "kJ/m²" ;
+  qudt:ucumCode "kJ.m-2"^^qudt:UCUMcs ;
+  rdfs:isDefinedBy <http://qudt.org/vocab/unit> ;
+  rdfs:label "Kilodżul na Metr Kwadratowy"@pl ;
+  rdfs:label "Kilojoule na Kvadratni Meter"@sl ;
+  rdfs:label "Kilojoule na Čtvereční Metr"@cs ;
+  rdfs:label "Kilojoule par Mètre Carré"@fr ;
+  rdfs:label "Kilojoule pe Metru Pătrat"@ro ;
+  rdfs:label "Kilojoule per Meter Persegi"@ms ;
+  rdfs:label "Kilojoule per Metrekare"@tr ;
+  rdfs:label "Kilojoule per Metro Quadrato"@it ;
+  rdfs:label "Kilojoule per Square Meter"@en-US ;
+  rdfs:label "Kilojoule per Square Metre"@en ;
+  rdfs:label "Kilojoule pro Quadratmeter"@de ;
+  rdfs:label "Kilojulio por Metro Cuadrado"@es ;
+  rdfs:label "Kilojoule per Square Metre" .
+
 unit:KiloJ-PER-MIN
   a qudt:Unit ;
   dcterms:description "quotient from the 1,000-fold of the SI derived unit joule divided by the unit minute" ;
@@ -29052,6 +29095,32 @@ unit:KiloM-PER-HR
   rdfs:label "Kilometer per Hour"@en-US ;
   rdfs:label "Kilometre per Hour"@en ;
   rdfs:label "Kilometre per Hour" .
+
+unit:KiloM-PER-KiloM2
+  a qudt:Unit ;
+  dcterms:description "1000 of the SI standard unit (M) length per squared kilometer area."@en ;
+  qudt:applicableSystem sou:CGS ;
+  qudt:applicableSystem sou:CGS-EMU ;
+  qudt:applicableSystem sou:CGS-GAUSS ;
+  qudt:applicableSystem sou:SI ;
+  qudt:conversionMultiplier 0.0010 ;
+  qudt:hasDimensionVector qkdv:A0E0L-1I0M0H0T0D0 ;
+  qudt:hasFactorUnit [
+    qudt:exponent -2 ;
+    qudt:hasUnit unit:KiloM ;
+  ] ;
+  qudt:hasFactorUnit [
+    qudt:exponent 1 ;
+    qudt:hasUnit unit:KiloM ;
+  ] ;
+  qudt:hasQuantityKind quantitykind:InverseLength ;
+  qudt:plainTextDescription "Kilometer per square kilometer quantifies linear feature density such as river length per watershed area, road density, or edge-to-area ratios in landscape ecology studies." ;
+  qudt:symbol "km/km²" ;
+  qudt:ucumCode "km.km-2"^^qudt:UCUMcs ;
+  rdfs:isDefinedBy <http://qudt.org/3.1.2/vocab/unit> ;
+  rdfs:label "Kilometer per Square Kilometer"@en ;
+  rdfs:label "Kilometers per square kilometer"@en-US ;
+  rdfs:label "Kilometres per square kilometre"@en .
 
 unit:KiloM-PER-SEC
   a qudt:Unit ;
@@ -35518,6 +35587,32 @@ unit:M2-PER-M2
   rdfs:label "Квадратен Метър на Квадратен Метър"@bg ;
   rdfs:label "Квадратный Метр на Квадратный Метр"@ru ;
   rdfs:label "Square Metre per Square Metre" .
+
+unit:M2-PER-M3
+  a qudt:Unit ;
+  dcterms:description "Square of the SI standard unit (M) length per cubed meter volume."@en ;
+  qudt:applicableSystem sou:CGS ;
+  qudt:applicableSystem sou:CGS-EMU ;
+  qudt:applicableSystem sou:CGS-GAUSS ;
+  qudt:applicableSystem sou:SI ;
+  qudt:conversionMultiplier 1.0 ;
+  qudt:hasDimensionVector qkdv:A0E0L-1I0M0H0T0D0 ;
+  qudt:hasFactorUnit [
+    qudt:exponent -3 ;
+    qudt:hasUnit unit:M ;
+  ] ;
+  qudt:hasFactorUnit [
+    qudt:exponent 2 ;
+    qudt:hasUnit unit:M ;
+  ] ;
+  qudt:hasQuantityKind quantitykind:InverseLength ;
+  qudt:plainTextDescription "Square meter per cubic meter represents surface area to volume ratio, commonly used in environmental engineering for characterizing porous media, biological surface areas, or habitat complexity." ;
+  qudt:symbol "m²/m³" ;
+  qudt:ucumCode "m2.m-3"^^qudt:UCUMcs ;
+  rdfs:isDefinedBy <http://qudt.org/3.1.2/vocab/unit> ;
+  rdfs:label "Meters squared per cubic Meter"@en ;
+  rdfs:label "Square meters per cubic meter"@en-US ;
+  rdfs:label "Square metres per cubic metre"@en .
 
 unit:M2-PER-MOL
   a qudt:DerivedUnit, qudt:Unit ;
