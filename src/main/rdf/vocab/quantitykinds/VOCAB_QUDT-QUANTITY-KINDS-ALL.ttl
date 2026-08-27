@@ -2971,7 +2971,7 @@ quantitykind:CountPerLength
   dcterms:plainTextDescription "Count per length quantifies the linear density of objects along linear features such as transects" ;
   qudt:hasDimensionVector qkdv:A0E0L-1I0M0H0T0D0 ;
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
-  rdfs:label "Count Per Length"@en .
+  rdfs:label "Count per Length"@en .
 
 quantitykind:CountRate
   a qudt:QuantityKind ;
@@ -12064,12 +12064,9 @@ quantitykind:MolarSpecificBiogeochemicalRate
       ecosystem, calculated per  mole of the relevant biological material. Unreduced, SI unit is mole * mole-1 * s-1
     """ ;
   qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T-1D0 ;
-  qudt:informativeReference ""^^xsd:anyURI ;
   qudt:plainTextDescription """the rate at which a specific chemical element or compound is processed or transformed within an
       ecosystem, calculated per mole of the relevant biological material. Unreduced, SI unit is mol * mol-1 * s-1
     """ ;
-  qudt:qkdvDenominator qkdv:A1E0L0I0M0H0T1D0 ;
-  qudt:qkdvNumerator qkdv:A1E0L0I0M0H0T0D0 ;
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
   rdfs:label "Molar Specific Biogeochemical Rate"@en .
 
@@ -12134,10 +12131,7 @@ quantitykind:MolarVolume
 quantitykind:MolarVolumetricRate
   a qudt:QuantityKind ;
   qudt:hasDimensionVector qkdv:A1E0L-3I0M0H0T-1D0 ;
-  qudt:informativeReference ""^^xsd:anyURI ;
   qudt:plainTextDescription "Measures change in a molar contectration over time. " ;
-  qudt:qkdvDenominator qkdv:A0E0L-3I0M0H0T-1D0 ;
-  qudt:qkdvNumerator qkdv:A1EL0I0M0H0T0D0 ;
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
   rdfs:label "Molar Volumetric Rate"@en .
 
@@ -14321,7 +14315,6 @@ quantitykind:PressureLossPerLength
 quantitykind:PressureNormalizedMolarConcentration
   a qudt:QuantityKind ;
   qudt:hasDimensionVector qkdv:A1E0L2I0M-1H0T2D0 ;
-  qudt:informativeReference ""^^xsd:anyURI ;
   qudt:plainTextDescription "Measures how much a molar contectration changes per unit of pressure. Compolsed of a gas or solute's concentration divided (or normalized) by the system's partial pressue. Derived from the Ideal Gas Law. " ;
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
   rdfs:label "Pressure-normalized Molar Concentration"@en .
@@ -19936,10 +19929,7 @@ quantitykind:VolumePerTime
 quantitykind:VolumeRatio
   a qudt:QuantityKind ;
   qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D1 ;
-  qudt:informativeReference ""^^xsd:anyURI ;
   qudt:plainTextDescription "Ratio of two volumes. " ;
-  qudt:qkdvDenominator qkdv:A0E0L-3I0M0H0T0D0 ;
-  qudt:qkdvNumerator qkdv:A0EL3I0M0H0T0D0 ;
   rdfs:isDefinedBy <http://qudt.org/$$QUDT_VERSION$$/vocab/quantitykind> ;
   rdfs:label "Volume Ratio"@en .
 
